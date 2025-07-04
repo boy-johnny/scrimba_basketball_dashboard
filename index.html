@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="section period-section">
+                <h3 class="title">PERIOD</h3>
+                <div class="counter" id="period-counter">01</div>
+            </div>
+            <div class="section remaining-section">
+                <h3 class="title">REMAINING</h3>
+                <div class="timer" id="remaining-timer">50:00</div>
+            </div>
+            <section id="counter-section">
+                <div class="section home-section">
+                    <h3 class="title">HOME</h3>
+                    <div class="counter" id="home-counter">0</div>
+                    <div class="button-section">
+                        <button class="btn" onclick="updateScore('home', 1)">+1</button>
+                        <button class="btn" onclick="updateScore('home', 2)">+2</button>
+                        <button class="btn" onclick="updateScore('home', 3)">+3</button>
+                    </div>
+                </div>
+                <div class="section guest-section">
+                    <h3 class="title">GUEST</h3>
+                    <div class="counter" id="guest-counter">0</div>
+                    <div class="button-section">
+                        <button class="btn" onclick="updateScore('guest', 1)">+1</button>
+                        <button class="btn" onclick="updateScore('guest', 2)">+2</button>
+                        <button class="btn" onclick="updateScore('guest', 3)">+3</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section reset-section">
+                <button class="btn" id="reset-btn" onclick="resetGame()">NEW GAME</button>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

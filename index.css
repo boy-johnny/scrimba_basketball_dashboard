@@ -1,0 +1,108 @@
+:root {
+    --background: #1B244A;
+    --red: #F94F6D;
+    --light-blue: #9AABD8;
+    --white: #fff;
+}
+
+@font-face {
+    src: url(font/CursedTimerUlil-Aznm.ttf);
+    font-family: Cursed Timer;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--white);
+}
+
+/* container and section */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#counter-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+/* button */
+.btn {
+    font-family: Cursed Timer, Arial, sans-serif ;
+    background-color: transparent;
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+#reset-btn {
+    background-color: var(--light-blue);
+    color: var(--background);
+    font-size: 1.5rem;
+}
+
+#reset-btn:hover {
+    background-color: var(--red);
+    border: var(--red);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+/* Text */
+.title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+
+/* counter */
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    padding: 12px;
+    font-family: Cursed Timer, Arial, sans-serif ;
+    font-size: 5rem;
+    color: var(--red);
+    background-color: black;
+    border-radius: 20px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    padding: 12px 20px;;
+    font-family: Cursed Timer, Arial, sans-serif ;
+    font-size: 4rem;
+    color: var(--red);
+    background-color: black;
+    border-radius: 20px;
+}
