@@ -1,4 +1,4 @@
-# Basketball Dashboard
+# Basketball Scoreboard
 
 ![preview](preview.png)
 
